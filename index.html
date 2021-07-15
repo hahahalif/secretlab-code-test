@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>SecretLab Code Test</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="dist/app.css" />
+    </head>
+    <body>
+        
+        <div class="container">
+            <canvas id="canvas" width="800" height="800" class="mb-3"></canvas>
+            <div class="d-flex justify-content-between mb-3">
+                <div class="col me-3">
+                    <label for="uploadImage" class="form-label d-none">Upload image</label>
+                    <input id="uploadImage" type="file" name="photo" class="form-control" />
+                </div>
+                <div class="">
+                    <button class="btn btn-danger" onclick="deleteImage()">Delete Image</button>
+                </div>
+            </div>
+
+        
+
+        
+            <div id="image-space">
+                <span></span>
+            </div>
+            <div id="tags" class="border p-3 mb-3">
+                <h3 class="h6">Tags</h3>
+                <div class="border-bottom mb-3">
+                    <ul id="tag-space" class="list-group list-group-flush"></ul>
+                </div>
+                <button class="btn btn-outline-danger btn-sm d-none" onclick="wipeTagListItems('button')">Delete all tags</button>
+            </div>
+            
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ="   crossorigin="anonymous"></script>
+        <script src="dist/app.js" async defer></script>
+    </body>
+</html>
